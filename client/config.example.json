@@ -1,0 +1,13 @@
+{
+  "server_urls": [
+    "https://your-domain.com/proxy.php",
+    "https://backup-domain.com/proxy.php"
+  ],
+  "secret_key": "ChangeThisSecretKey",
+  "listen_host": "127.0.0.1",
+  "listen_port": 8080,
+  "auto_system_proxy": true,
+  "ask_system_proxy": false,
+  "timeout": 45,
+  "verify_ssl": false
+}

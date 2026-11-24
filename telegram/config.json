@@ -1,0 +1,14 @@
+{
+  "server_urls": [
+    "https://your-domain.com/proxy.php"
+  ],
+  "secret_key": "ChangeThisSecretKey",
+  "listen_host": "0.0.0.0",
+  "socks_port": 1080,
+  "mtproto_port": 8443,
+  "mtproto_secret": "d41d8cd98f00b204e9800998ecf8427e",
+  "auth_username": "",
+  "auth_password": "",
+  "timeout": 35,
+  "verify_ssl": false
+}

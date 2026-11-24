@@ -1,0 +1,21 @@
+# =============================================================
+# Apache Optimization & Protection for PHP-WebVPN Backend
+# =============================================================
+
+# Increase PHP limits if mod_php is loaded
+<IfModule mod_php7.c>
+    php_value max_execution_time 120
+    php_value memory_limit 256M
+    php_flag output_buffering off
+</IfModule>
+
+<IfModule mod_php.c>
+    php_value max_execution_time 120
+    php_value memory_limit 256M
+    php_flag output_buffering off
+</IfModule>
+
+# Enable Gzip compression to accelerate payload transfers
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE application/json text/plain text/html
+</IfModule>

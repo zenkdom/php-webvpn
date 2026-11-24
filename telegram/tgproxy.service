@@ -1,0 +1,20 @@
+[Unit]
+Description=Telegram Multi-Protocol Proxy Server (MTProto + SOCKS5)
+After=network.target network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/tg
+ExecStart=/usr/bin/python3 -u /root/tg/socks_server.py
+Restart=always
+RestartSec=3
+LimitNOFILE=65535
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=tgproxy
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
