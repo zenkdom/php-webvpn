@@ -182,4 +182,4 @@ Validates Root CA generation, dynamic TLS minting, system proxy toggling, mock P
 ---
 
 ## 📄 License
-This project is open-source under the [MIT License](LICENSE).
+This project is open-source under the [MIT License](LICENSE) (see [Open Source Initiative](https://opensource.org/licenses/MIT)).
